@@ -1,0 +1,31 @@
+Null - Explicitly set a variable with no value
+Undefined - For variables that have not yet been defined 
+
+string 可以用 '',也可以用""
+string concatenation 直接用 +
+getting characters 直接用 []
+.indexof()
+.slice(,)
+.substr(,)
+.replace(,)
+
+
+math operators - + , - , * , / ,**, %, ++, --, +=, -=, *=, /= 
+NaN : not a number
+
+1, concatenation way
+2, template string way
+3, html template
+
+
+
+array:
+['zhang san','lisi']
+['shaun','cris',3,4]
+.length
+.join()
+.indexOf()
+.concat()
+.push()
+.pop()
+
