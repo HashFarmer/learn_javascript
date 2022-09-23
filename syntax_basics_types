@@ -1,1 +1,44 @@
 
+.includes()
+
+loose comparison (different types can still be equal)
+console.log(25 == '25'); true
+
+strict comparison
+console.log(25 == '25');
+
+// for loop
+for(let i = 0; i< 5; i++){
+
+}
+
+// while loop
+let i = 0;
+while(i < 5){
+
+  i++;
+
+}
+
+//do...while
+
+// if ... else if ... else,  switch( ){ }
+
+// && , ||, !, 
+
+// break continue
+
+// block scope, 强龙不压地头蛇
+
+// call or invoke 
+1, function declaration, 位置可以在后面
+2, function expression， 先有之后才可以使用
+3, arrow function
+
+parameter:形参
+argument:实参
+
+
+
+//
+.foreach( (element, index) => {   }) 
