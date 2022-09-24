@@ -42,3 +42,12 @@ argument:实参
 
 //
 .foreach( (element, index) => {   }) 
+
+// objects
+properties , methods
+对于properties, 有两种access方式
+
+
+// primitive types -- reference types
+// stack -- heap
+针对referenc types , shallow copy + reference counter 配套使用， 在rust中是 move + ownership 配套使用
