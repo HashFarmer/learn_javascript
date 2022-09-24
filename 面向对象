@@ -1,0 +1,8 @@
+有什么  ->  properties
+能干什么  ->  methods
+
+为什么要有类？就是为了方便快捷地批量生成某些类型的对象。
+
+两种object，1、基于class创建的，2、单体object。 properties 不用在constructor外重复声明。  方法也是直接写，不用function声明
+
+3、独立在外的constructor函数，为什么要用prototype呢？解决继承的问题？为了properties与methods的分离？
