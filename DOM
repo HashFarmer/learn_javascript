@@ -1,0 +1,17 @@
+Created by the browser
+'document' object
+
+class相当于所有<p>元素的一个子类， <p class = 'error'>
+
+querySelector 比 getElementById , getElementByClassName ，getElementByTagName 更通用
+
+innerText, innerHTML, 
+
+大致流程就是，选择元素，修改元素的属性 
+
+选择元素的属性：getAttribute()，什么时候用 . ? innerText是无指明的属性名的，所以用 . 
+
+style 包含的内容很丰富
+<h1 style = "color: crimson; margin: 50px"> The DOM </h1>
+
+css就是为了归整这些style里面的属性服务的
