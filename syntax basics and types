@@ -29,3 +29,5 @@ array:
 .push()
 .pop()
 
+
+import {} from     一部分元素，而不是把整个文件都拿过来
