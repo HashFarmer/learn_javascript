@@ -1,0 +1,10 @@
+
+
+let arr = [1, 3, 5];
+console.log(arr.sort(descending));
+
+function descending(a, b) {
+    return b - a;
+}
+
+sort()里面的函数貌似是一个判断函数，如果 b - a > 0, 则排序为 b，a
