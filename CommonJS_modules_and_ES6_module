@@ -1,5 +1,7 @@
 嵌入到html页面里的 .js 代码，不需要exports关键字，.js代码里的元素全部可用
 
+
+// 
 //--------------
 
 导出方式【a.js】：
@@ -60,7 +62,7 @@ require这种方式常用于node程序中
 
 
 
-
+// ES6 module
 //--------------------
 导出方式 A【a.js】
 const SayHello = () => {
@@ -110,6 +112,44 @@ SayHello();
 SayGoodbye();
 
 【html】
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script src="example.js", type = "module">
+        </script>
+    </body>
+
+</html>
+
+
+//--------------------------------
+【导出】
+// 如果导出，const不可少
+const SayHello = function() {
+    console.log("Hello! How are you?");
+}
+
+
+function SayGoodbye() {
+    console.log("Goodbye! See you.");
+}
+
+// 如果导出，const不可少
+const SaySomething = () => {
+    console.log("Im OK.")
+}
+
+export { SayHello, SayGoodbye, SaySomething};
+
+【导入】（如果要在node中执行，需要package.json中设置"type": "module"）
+import{SayHello, SayGoodbye, SaySomething} from './b.js';
+SayHello();
+SayGoodbye();
+SaySomething();
+
+【html文件】
 <html>
     <head>
     </head>
