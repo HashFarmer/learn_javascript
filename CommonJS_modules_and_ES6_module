@@ -52,6 +52,15 @@ SayHello();
 SayGoodbye();
 
 
+common js 导出的核心是 exports 对象的构建，导入用require来解构
+
+
+/====================================
+
+
+
+
+
 //--------------------
 导出方式 A【a.js】
 const SayHello = () => {
