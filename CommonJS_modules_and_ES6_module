@@ -37,12 +37,19 @@ SayHello();
 SayGoodbye();
 
 //---------------------------------
+导出文件【a.js】
+exports.SayHello = () => {
+    console.log("Hello! How are you?");
+}
 
+exports.SayGoodbye = function() {
+    console.log("Goodbye");
+}
 
-
-
-
-
+导入文件【b.js】
+const {SayHello,SayGoodbye} = require('./b.js');
+SayHello();
+SayGoodbye();
 
 
 //--------------------
