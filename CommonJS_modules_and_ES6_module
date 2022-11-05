@@ -35,7 +35,7 @@ import {SayHello} from "./b.js";
     </head>
 
     <body>
-        <script src="example.js" type="module">
+        <script src="example.js" type="module">          // type = "module"的真正含义，把example.js中对象限制为模块级别，而非全局级别（window.）
         </script>
     </body>
 
