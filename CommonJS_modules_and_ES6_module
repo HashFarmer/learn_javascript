@@ -1,2 +1,47 @@
 嵌入到html页面里的 .js 代码，不需要exports关键字，.js代码里的元素全部可用
 
+//--------------
+
+导出方式【a.js】：
+exports.SayHello = () => {
+    console.log("Hello!");
+}
+与之对应的，
+正确的导入方式【b.js】:
+const {SayHello} = require('./b.js');
+错误的导入方式【b.js】:
+import {SayHello} from "./b.js";
+
+
+
+//--------------------
+导出方式 A【a.js】
+const SayHello = () => {
+    console.log("Hello! How are you?");
+}
+export { SayHello};
+
+导出方式b【a.js】
+export const SayHello = () => {
+    console.log("Hello! How are you?");
+}
+
+导出方式a，b，与之对应的导入方式【b.js】
+import {SayHello} from "./b.js";
+
+嵌入的html文件
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script src="example.js" type="module">
+        </script>
+    </body>
+
+</html>
+
+不论哪种导出方式，html页面都可以正确运行，但是不能单独 node 执行b.js
+
+
+
