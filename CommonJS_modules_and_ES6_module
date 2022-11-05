@@ -92,4 +92,31 @@ import {SayHello} from "./b.js";
 如果想要单独执行 b.js ，需要 npm init -y，然后在package.json中添加 "type":"module",
 
 
+//--------------------------------
 
+【导出】
+
+export const SayHello = () => {
+    console.log("Hello! How are you?");
+}
+
+export const SayGoodbye = function() {
+    console.log("Goodbye! See you.");
+}
+
+【导入】
+import{SayHello, SayGoodbye} from './b.js';
+SayHello();
+SayGoodbye();
+
+【html】
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script src="example.js", type = "module">
+        </script>
+    </body>
+
+</html>
