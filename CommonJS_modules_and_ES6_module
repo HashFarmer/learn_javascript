@@ -17,6 +17,32 @@ const {SayHello} = require('./b.js');
 错误的导入方式【b.js】:
 import {SayHello} from "./b.js";
 
+含有require()语句的js文件不能被嵌入到html文件。但是可以被node 执行。
+
+//------------------------------
+导出文件【a.js】：
+function SayHello() {
+    console.log("Hello! How are you?");
+}
+
+function SayGoodbye() {
+    console.log("Goodbye");
+}
+
+module.exports = {SayHello, SayGoodbye};
+
+导入文件【b.js】：
+const {SayHello,SayGoodbye} = require('./b.js');
+SayHello();
+SayGoodbye();
+
+//---------------------------------
+
+
+
+
+
+
 
 
 //--------------------
