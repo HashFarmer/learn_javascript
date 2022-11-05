@@ -53,7 +53,7 @@ SayGoodbye();
 
 
 common js 导出的核心是 exports 对象的构建，导入用require来解构
-
+require这种方式常用于node程序中
 
 /====================================
 
