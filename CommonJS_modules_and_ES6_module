@@ -6,8 +6,13 @@
 exports.SayHello = () => {
     console.log("Hello!");
 }
-与之对应的，
-正确的导入方式【b.js】:
+或
+function SayHello() {
+    console.log("Hello! How are you?");
+}
+module.exports = SayHello;
+
+与之对应的，正确的导入方式【b.js】:
 const {SayHello} = require('./b.js');
 错误的导入方式【b.js】:
 import {SayHello} from "./b.js";
