@@ -1,0 +1,20 @@
+Suppose you want to use a variable for counting something, and you want this counter to be available to all functions.
+
+You could use a global variable, and a function to increase the counter:
+
+global variable：be available to all functions.
+
+
+
+function valueIncrementer() {
+    let currentValue = 0;
+    return function() {
+        return currentValue++;
+    };
+}
+//函数，自带了一个变量currentValue = 0
+const increment = valueIncrementer(); //携带了某种状态，局部变量已经消失了，但是局部变量的值被闭包保留了，还可不断更新
+
+console.log(increment()); // => 0
+console.log(increment()); // => 1
+console.log(increment()); // => 2
